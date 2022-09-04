@@ -1,0 +1,89 @@
+.comment{
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.commentBox{
+  flex: 1;
+}
+
+.commentBoxContent{
+  background: var(--gray-700);
+  padding: 1rem ;
+  border: none;
+  border-radius: 8px;
+}
+
+.commentBoxContent header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar > strong{
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.avatar > time{
+  line-height: 1.4;
+  font-size: .75rem;
+  color: var(--gray-400);
+}
+
+.commentBoxContent header button{
+  list-style: 0;
+  background:transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  border-radius: 2px;
+
+  transition: color 0.1s;
+}
+
+.commentBoxContent header button:hover, .commentBoxContent header button:focus{
+  color: var(--red-500);
+}
+
+.commentBoxContent > p{
+  margin-top: 1rem;
+  color: var(--gray-100);
+}
+
+.commentBox footer{
+  margin-top: 1rem;
+}
+
+.commentBox footer button{
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--gray-400);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  transition:  color .1s;
+}
+
+.commentBox footer button:hover{
+  color: var(--green-300)
+}
+
+.commentBox button svg{
+  margin-right: .5rem;
+}
+
+.commentBox button span::before{
+  content: '\2022';
+  padding: 0 .25rem;
+
+}
